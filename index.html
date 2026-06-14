@@ -1,0 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Go On A Date With Me? ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte Romântica -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Corações Flutuando -->
+    <div class="hearts-container"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="carousel">
+
+            <div class="slide active">
+                <img src="assets/primeira.jpeg" alt="Nossa foto 1">
+            </div>
+
+            <div class="slide">
+                <img src="assets/segunda.jpeg" alt="Nossa foto 2">
+            </div>
+
+            <div class="slide">
+                <img src="assets/terceira.jpeg" alt="Nossa foto 3">
+            </div>
+
+            <div class="slide">
+                <img src="assets/quarta.jpeg" alt="Nossa foto 4">
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+
+        </div>
+
+        <div class="hero-content">
+
+            <h1>
+                Tá afim de ir pra um date comigo? ❤️
+            </h1>
+
+            <p>
+                Tô pensanddo em algo super legal pra nós, que tal? Aposto que você quer...😊
+            </p>
+
+            <div class="buttons">
+
+                <button id="yesBtn" class="btn yes-btn">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn" class="btn no-btn">
+                    NO 😢
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ETAPA DATA -->
+    <section class="step step-hidden" id="dateSection">
+
+        <div class="card-container">
+
+            <h2>ESCOLHE A DATA ❤️</h2>
+
+            <div class="input-group">
+                <label>Date</label>
+                <input type="date" id="dateInput">
+            </div>
+
+            <div class="input-group">
+                <label>Time</label>
+                <input type="time" id="timeInput">
+            </div>
+
+            <button id="continueBtn" class="btn primary-btn">
+                Continue ✨
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ETAPA PLANO -->
+    <section class="step step-hidden" id="planSection">
+
+        <div class="card-container">
+
+            <h2>Escolhe um, gatinha ❤️</h2>
+
+            <div class="plans">
+
+                <div class="plan-card" data-plan="Musical Theater">
+                    <div class="emoji">🎭</div>
+                    <h3>Teatro Musical</h3>
+                    <p>Esse eu sei que cê tá com fomo de irmos juntas</p>
+                </div>
+
+                <div class="plan-card" data-plan="Cinema">
+                    <div class="emoji">🎬</div>
+                    <h3>Cinema</h3>
+                    <p>Igual aquela música, "No escurinho do cinema"</p>
+                </div>
+
+                <div class="plan-card" data-plan="Romantic Dinner">
+                    <div class="emoji">🍽️</div>
+                    <h3>Jantarzinho</h3>
+                    <p>Janta e daí depois tem sobremesa opa.</p>
+                </div>
+
+            </div>
+
+            <button id="confirmBtn" class="btn primary-btn">
+                Confirmar ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL FINAL -->
+    <div class="modal-overlay" id="successModal">
+
+        <div class="modal">
+
+            <div class="modal-hearts"></div>
+
+            <h2>Yay! ❤️</h2>
+
+            <p id="summaryText"></p>
+
+            <p>
+                Mal posso esperar minha cnh (17 de setembro, né?) pra irmos, princesa ❤️
+            </p>
+
+            <button id="closeModal" class="btn primary-btn">
+                Fechar ❤️
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- CONFETES -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
